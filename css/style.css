@@ -14,6 +14,7 @@ h1, h2, h3 {
 }
 h1 {
   font-size: 40px;
+  font-weight: 700;
   color: white;
 }
 h2 {
@@ -29,6 +30,8 @@ h5 {
 }
 p {
   font-size: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 .wrapper1050 {
   width: 100%;
@@ -44,6 +47,9 @@ p {
   padding: 70px 25px;
 }
 
+.padding70 {
+  padding: 70px 0;
+}
 .position_relative {
   position: relative;
 }
@@ -58,7 +64,7 @@ p {
   color: #bfcc96;
 }
 .btn_yellow {
-  border: 2px ridge #bbff0f;
+  border: 2px ridge #a1de41;
   box-shadow: 0px 0px 1px 0px rgba(243,255,69,1);
 }
 .btn_grey {
@@ -123,9 +129,28 @@ p {
   background-color: #222728;
 }
 
-.jumbo img {
-  width: 90%;
+.jumbo_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
+.jumbo p {
+  width: 70%;
+  margin: 0 auto;
+  color: #84949a;
+}
+
+.btn_big {
+  font-size: 16px;
+  margin: 30px auto 0;
+  padding: 10px 40px;
+}
+
+.jumbo img {
+  width: 100%;
+}
+
 /* MAIN */
 /* loghi */
 .loghi {
