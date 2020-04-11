@@ -184,7 +184,7 @@ p {
 }
 
 /* quick */
-.quick {
+.main {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -197,16 +197,16 @@ p {
   margin-right: 10px;
   width: 20px;
 }
-.quick h5 {
+.main h5 {
   color: #7a8b91;
 }
 
-.quick h2 {
+.main h2 {
   text-align: center;
   color: #3b4447;
 }
 
-.quick h2::after {
+.main h2::after {
   display: block;
   position: relative;
   left: calc(50% - 15px);
@@ -218,12 +218,13 @@ p {
   border: 1px solid silver;
   border-radius: 20px;
 }
-.quick p {
+.main p {
   color: #697782;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
-.quick a {
+.main a {
   font-size: 16px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -231,7 +232,7 @@ p {
   border-bottom: 2px solid rgba(36,193,237,0.5);
 }
 
-.quick a i {
+.main a i {
   margin-left: 10px;
   font-size: 10px;
   color: rgba(36,193,237,0.5);
@@ -243,9 +244,46 @@ p {
 }
 
 /* url */
-
-/* scale */
-
+.url {
+  background-color: #222728;
+}
+.url .wrapper1500 {
+  padding-bottom: 0;
+}
+.url h5 {
+  color: #a1abb0;
+}
+.url h2 {
+  color: white;
+}
+.url h2::after {
+  border-color:  #84949a;
+  background-color: #494a4a ;
+}
+.url p {
+  color: #84949a;
+}
+.url .img {
+  display: flex;
+  justify-content: center;
+}
+.url .img img {
+  width: 60%;
+}
+/* vector */
+.vector {
+  background-image: url(../img/onda.svg);
+}
+.container_img {
+  margin-top: 100px;
+  text-align: center;
+}
+.container_img img {
+  display: inline-block;
+  width: 30%;
+  margin-right: 20px;
+  box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+}
 /* free */
 .left {
   height: 350px;
@@ -303,13 +341,44 @@ footer {
     padding: 60px 0 60px 60px;
     text-align: left;
   }
-  .quick h2 {
+  .main h2 {
     text-align: left;
   }
-  .quick h2::after {
+  .main h2::after {
     position: static;
   }
-  .img {
+  .img{
     padding-right: 60px;
   }
+  .url ,
+  .vector {
+    position: relative;
+    padding-bottom: 80px;
+    overflow: hidden;
+  }
+  .url .img,
+  .container_img {
+    position: static;
+  }
+  .url .img img {
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+  }
+  .container_img {
+    position: absolute;
+    padding-right: 60px;
+    top: 65%;
+    left: 50%;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .container_img img {
+    display: inline-block;
+    bottom: 0;
+    width: 40%;
+  }
+
+
 }
